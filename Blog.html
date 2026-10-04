@@ -24,29 +24,33 @@
 <div style="display:flex;flex-direction:column;gap:22px;margin-top:32px">
 <article style="background:#fff;border:4px solid #111;border-radius:18px;padding:24px 28px 28px">
 <div style="font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#c8260f">10/3/2026</div>
-<h2 style="margin:6px 0 0;font-family:'Archivo Black',sans-serif;font-size:30px;line-height:1.1;letter-spacing:-.01em">A Neuromorphic Aircraft Counter for Underserved, Non-Towered Airports</h2>
+<h2 style="margin:6px 0 0;font-family:'Archivo Black',sans-serif;font-size:30px;line-height:1.1;letter-spacing:-.01em">A Neuromorphic Aircraft Counter for Untowered Airports Needing Grant Money</h2>
 <p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:pretty">
     Hello! My name is Ayman Aghel, and I'm a freshman at West High School in Knoxville, Tennessee. This is my first blog post!
     I want this blog to become a place to discuss things going on in the world that interest me, and to discuss things that I am up to!
-    You can check out the about page on this website, but I love aviation, autonomous systems, and lately: neuromorphic systems and
-    biotech. I am fluent in Python, a coder for my school's First Robotics Team (Java), and I want to learn C++. If something on here interests 
-    you, do not hesitate to contact me! For context on the things I talk about here, please check out the rest of this website and my GitHub.
+    Check out the About Me page on this website for more about me and my interests! Check out my GitHub to see what I'm up to!
     <p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:pretty">
-    Right now, my biggest project is probably aircraft_counter. It's a manually coded leaky-integrate-fire network currently comprised of 
-    5 neurons: one takeoff, one landing, two touch/go, and one "time" neuron. More details can be found on the repo. It's coded completely manually in Python, so it only uses OpenCV and NumPy libraries. Airports need aircraft-counting technology that can classify movement by takeoff, landing, and touch/go to recieve grants from the F.A.A, 
-    and most end up costing small airports tens of thousands of dollars; they can't afford it, so they end up getting super low amounts of money since their numbers are estimates. I thought this was the perfect oppurtunity to improve general aviation safety and learn about
-    neuromorphic technologies! If my counter has within a 3% accuracy of an airport's actual takeoff, landing, and go/around count in testing, it could be used to count aircraft and get underserved, non-towered airports the funding they need.
-    You can see a detailed description of nearly all of the changes to the repository from initial commit on the README.md in the repository. Of course, though, this project still needs to be converted to code capable of being used in neuromorphic 
-    chips (and it needs a neuromorphic chip!). Within the next week, I plan to film my own footage at general aviation airports due to a lack of available footage online (static airport webcams). Check out the repository in the projects page of this website!
+    Right now, my biggest project is aircraft_counter: a manually coded leaky-integrate and fire network currently composed of five neurons: one takeoff, one landing, two touch & go, and one "time" neuron. It's coded completely manually in Python, so it only uses OpenCV and NumPy libraries. More details can be found on the repository.
     <p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:pretty">
-    Also, I have been polishing my Fusion skills so that I can learn how to train my own robots with reinforcement learning (RL)! Right now,
-    I'm stuck trying to create something to attach the servo horns to the legs in the desk robot I am making. I'm using a couple MG996R servos and I already made a case for them to both go in, 
-    with some wire management, but I am on my 5th iteration of a design to connect to the servo as a leg. I tried a few designs to make the leg connect directly to the shaft, but that didn't spin. Now,
-    I am trying to connect it to the servo horn, but most of my designs aren't a tight enough fit. To make matters worse, one of the wires in my 3D printer's toolhead snapped, so I have to wait a couple weeks
-    before actually printing a new design. This is probably a good thing for me though, as I have more time to practice making assemblie in Fusion, I can start working on other parts of the desk robot, and devote more time
-    to other projects, like my aircraft_counter project. 
+    I started making the project because more than 97% of airports in the United States are untowered, and those airports need grant money from the FAA for maintenance and safety. 
     <p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:pretty">
-    In the next blog post, I will let you guys know more about how these things are going and start talking more about things going on in the world. If you have any suggestions for my projects or anything else, pleas reach out by going to the contact page on this website.
+    However, to get grant money, those airports need to count how many aircraft are landing, taking off, and performing touch & goes at their airport. The technology to count and classify aircraft movement can cost thousands of dollars. This forces
+    airports to receive grant money based on estimates, and when a count is an estimate, the grant money is significantly less than it would be if it were counted.
+    <p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:pretty">
+    I thought that this was the perfect opportunity for me to practice making SNNs. Neuromorphic technology is, indubitably, one of the best ways to solve this problem for airports. Neuromorphic technology uses very little energy, perfect
+    for a camera setup far from a power source, and allows for counting technology to be made cheap, ideal for an airport that can't afford anything remotely expensive.
+    <p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:pretty">
+    I coded my first-ever Spiking Neural Network (SNN) completely manually and spent around a month making a very rough draft of code, then made a repository on GitHub to spend another month documenting the progress I made as I further developed the project. 
+    I have reached a point where further adjusting parameters like tau, dt, and thresh would make no sense, as real neuromorphic architecture would allow for training and testing on footage filmed at target airports to determine parameters. However, I continue to adjust and make 
+    changes to the architecture of the project, like adding neurons.  
+    <p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:pretty">    
+    To clarify, this code would mean nothing for energy efficiency if I ran it on a Raspberry Pi or on my laptop.
+    <p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:pretty">    
+    A simple way to think of neuromorphic technology is by imagining a bucket with a hole in its bottom and a faucet above it. The capacitor is the bucket, holding the energy. The faucet is the input, like the alpha values in aircraft_counter. The hole is the resistor, constantly
+    trying to leak to zero. In advanced applications, there are lots of those at once. It's so energy-efficient because only the neurons a certain event needs are using energy, while the others are using essentially none. My laptop running Python code, though, is 
+    using energy for every single neuron since it isn't using a neuromorphic chip. The same can be said for using many types of AI models that constantly check everything, everywhere, all at once, including Waymos and Tesla FSD systems.
+    <p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:pretty">
+    If you have any suggestions, please reach out on the contact page of this website.
     Thank you for reading!
 
     </p>
