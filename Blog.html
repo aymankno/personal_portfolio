@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Poppins:wght@500;600;700&amp;display=swap" rel="stylesheet"><style>body{margin:0;background:#f2f0e6}a{color:#2f55dd;text-decoration:none}a:hover{color:#ef2f14}</style></helmet>
+
+<div style="background:#f2f0e6;font-family:Poppins,system-ui,sans-serif;color:#111;min-height:100vh">
+<div style="max-width:1040px;margin:0 auto;padding:30px 40px 72px">
+
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap;font-family:ui-monospace,Menlo,monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#111">
+<a href="Portfolio.dc.html" style="color:#111">LANDING</a>
+<div style="display:flex;flex-wrap:wrap;gap:22px"><a href="Blog.dc.html" style="color:#c8260f">Blog</a><a href="Projects.dc.html" style="color:#111">Projects</a><a href="Credentials.dc.html" style="color:#111">Credentials</a><a href="GPA.dc.html" style="color:#111">GPA</a><a href="About.dc.html" style="color:#111">About</a><a href="Contact.dc.html" style="color:#111">Contact</a></div>
+</div>
+
+<div style="display:flex;align-items:baseline;gap:14px;border-bottom:4px solid #111;padding-bottom:14px;margin-top:48px">
+<h1 style="margin:0;font-family:'Archivo Black',sans-serif;font-size:56px;line-height:1;letter-spacing:-.02em;color:#2f55dd">Blog</h1>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:22px;margin-top:32px">
+<article style="background:#fff;border:4px solid #111;border-radius:18px;padding:24px 28px 28px">
+<div style="font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#c8260f">10/3/2026</div>
+<h2 style="margin:6px 0 0;font-family:'Archivo Black',sans-serif;font-size:30px;line-height:1.1;letter-spacing:-.01em">A Neuromorphic Aircraft Counter for Underserved, Non-Towered Airports</h2>
+<p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:pretty">
+    Hello! My name is Ayman Aghel, and I'm a freshman at West High School in Knoxville, Tennessee. This is my first blog post!
+    I want this blog to become a place to discuss things going on in the world that interest me, and to discuss things that I am up to!
+    You can check out the about page on this website, but I love aviation, autonomous systems, and lately: neuromorphic systems and
+    biotech. I am fluent in Python, a coder for my school's First Robotics Team (Java), and I want to learn C++. If something on here interests 
+    you, do not hesitate to contact me! For context on the things I talk about here, please check out the rest of this website and my GitHub.
+    <p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:pretty">
+    Right now, my biggest project is probably aircraft_counter. It's a manually coded leaky-integrate-fire network currently comprised of 
+    5 neurons: one takeoff, one landing, two touch/go, and one "time" neuron. More details can be found on the repo. It's coded completely manually in Python, so it only uses OpenCV and NumPy libraries. Airports need aircraft-counting technology that can classify movement by takeoff, landing, and touch/go to recieve grants from the F.A.A, 
+    and most end up costing small airports tens of thousands of dollars; they can't afford it, so they end up getting super low amounts of money since their numbers are estimates. I thought this was the perfect oppurtunity to improve general aviation safety and learn about
+    neuromorphic technologies! If my counter has within a 3% accuracy of an airport's actual takeoff, landing, and go/around count in testing, it could be used to count aircraft and get underserved, non-towered airports the funding they need.
+    You can see a detailed description of nearly all of the changes to the repository from initial commit on the README.md in the repository. Of course, though, this project still needs to be converted to code capable of being used in neuromorphic 
+    chips (and it needs a neuromorphic chip!). Within the next week, I plan to film my own footage at general aviation airports due to a lack of available footage online (static airport webcams). Check out the repository in the projects page of this website!
+    <p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:pretty">
+    Also, I have been polishing my Fusion skills so that I can learn how to train my own robots with reinforcement learning (RL)! Right now,
+    I'm stuck trying to create something to attach the servo horns to the legs in the desk robot I am making. I'm using a couple MG996R servos and I already made a case for them to both go in, 
+    with some wire management, but I am on my 5th iteration of a design to connect to the servo as a leg. I tried a few designs to make the leg connect directly to the shaft, but that didn't spin. Now,
+    I am trying to connect it to the servo horn, but most of my designs aren't a tight enough fit. To make matters worse, one of the wires in my 3D printer's toolhead snapped, so I have to wait a couple weeks
+    before actually printing a new design. This is probably a good thing for me though, as I have more time to practice making assemblie in Fusion, I can start working on other parts of the desk robot, and devote more time
+    to other projects, like my aircraft_counter project. 
+    <p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:pretty">
+    In the next blog post, I will let you guys know more about how these things are going and start talking more about things going on in the world. If you have any suggestions for my projects or anything else, pleas reach out by going to the contact page on this website.
+    Thank you for reading!
+
+    </p>
+</p>
+</article>
+</div>
+
+</div>
+</div>
+</x-dc>
+</body>
+</html>
