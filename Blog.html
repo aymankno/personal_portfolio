@@ -22,36 +22,38 @@
 </div>
 
 <div style="display:flex;flex-direction:column;gap:22px;margin-top:32px">
-<article style="background:#fff;border:4px solid #111;border-radius:18px;padding:24px 28px 28px">
-<div style="font-family:'Source Serif 4',serif;font-weight:600;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#EF2F14">10/3/2026</div>
-<h2 style="margin:6px 0 0;font-family:'Archivo Black',sans-serif;font-size:30px;line-height:1.1;letter-spacing:-.01em">A Neuromorphic Aircraft Counter for Untowered Airports Needing Grant Money</h2>
-<p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:pretty">
+<article style="background:#EF2F14;border:4px solid #fff;border-radius:18px;padding:24px 28px 28px">
+<div style="font-family:'Source Serif 4',serif;font-weight:600;font-size:20px;letter-spacing:.1em;text-transform:uppercase;color:#FFD71D; padding: 0px 4px 0px">10/3/2026</div>
+<h2 style="margin:6px 0 0;font-family:'Archivo Black',sans-serif;font-size:42px;line-height:1.1;letter-spacing:-.01em;color:#fff; padding: 0px 4px 20px">A Neuromorphic Aircraft Counter for Untowered Airports Needing Grant Money</h2>
+<article style="background: #fff;border:6px solid #EF2F14;border-radius:18px;padding:4px 28px 16px">
+    <p style="margin:8px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:prett;color:#111">
     Hello! My name is Ayman Aghel, and I'm a freshman at West High School in Knoxville, Tennessee. This is my first blog post!
     I want this blog to become a place to discuss things going on in the world that interest me, and to discuss things that I am up to!
     Check out the About Me page on this website for more about me and my interests! Check out my GitHub to see what I'm up to!
-    <p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:pretty">
+    <p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:prettyp;color:#111">
     Right now, my biggest project is aircraft_counter: a manually coded leaky-integrate and fire network currently composed of five neurons: one takeoff, one landing, two touch & go, and one "time" neuron. It's coded completely manually in Python, so it only uses OpenCV and NumPy libraries. More details can be found on the repository.
-    <p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:pretty">
+    <p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:prettyt;color:#111">
     I started making the project because more than 97% of airports in the United States are untowered, and those airports need grant money from the FAA for maintenance and safety. 
-    <p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:pretty">
+    <p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:pretty;color:#111">
     However, to get grant money, those airports need to count how many aircraft are landing, taking off, and performing touch & goes at their airport. The technology to count and classify aircraft movement can cost thousands of dollars. This forces
     airports to receive grant money based on estimates, and when a count is an estimate, the grant money is significantly less than it would be if it were counted.
-    <p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:pretty">
+    <p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:pretty;color:#111">
     I thought that this was the perfect opportunity for me to practice making SNNs. Neuromorphic technology is, indubitably, one of the best ways to solve this problem for airports. Neuromorphic technology uses very little energy, perfect
     for a camera setup far from a power source, and allows for counting technology to be made cheap, ideal for an airport that can't afford anything remotely expensive.
-    <p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:pretty">
+    <p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:pretty;color:#111">
     I coded my first-ever Spiking Neural Network (SNN) completely manually and spent around a month making a very rough draft of code, then made a repository on GitHub to spend another month documenting the progress I made as I further developed the project. 
     I have reached a point where further adjusting parameters like tau, dt, and thresh would make no sense, as real neuromorphic architecture would allow for training and testing on footage filmed at target airports to determine parameters. However, I continue to adjust and make 
     changes to the architecture of the project, like adding neurons.  
-    <p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:pretty">    
+    <p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:pretty;color:#111">    
     To clarify, this code would mean nothing for energy efficiency if I ran it on a Raspberry Pi or on my laptop.
-    <p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:pretty">    
+    <p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:pretty;color:#111">    
     A simple way to think of neuromorphic technology is by imagining a bucket with a hole in its bottom and a faucet above it. The capacitor is the bucket, holding the energy. The faucet is the input, like the alpha values in aircraft_counter. The hole is the resistor, constantly
     trying to leak to zero. In advanced applications, there are lots of those at once. It's so energy-efficient because only the neurons a certain event needs are using energy, while the others are using essentially none. My laptop running Python code, though, is 
     using energy for every single neuron since it isn't using a neuromorphic chip. The same can be said for using many types of AI models that constantly check everything, everywhere, all at once, including Waymos and Tesla FSD systems.
-    <p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:pretty">
+    <p style="margin:12px 0 0;font-weight:500;font-size:18px;line-height:1.55;max-width:80em;text-wrap:pretty;color:#111">
     If you have any suggestions, please reach out on the contact page of this website.
     Thank you for reading!
+</article>
 
     </p>
 </p>
